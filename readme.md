@@ -483,7 +483,17 @@ render() {
 2. 使用到ES6，需要经babel转译。
 3. IE通过把透明的上传按钮覆盖在传入的children的上传按钮上进行点击的捕捉。同时隐藏iframe。现代浏览器通过传入的按钮上再增加一层wrapper来捕捉。
 5. 丰富的生命周期函数
-6. 不包含预设样式，开放式组件 
+6. 不包含预设样式，开放式组件
+
+## 2019/06/08升级 ##
+1. React依赖更新到16.3.0
+2. 模块加载方案修改：
+```
+从
+var FileUpload = require('react-fileupload');
+修改为：
+import FileUpload from './FileUpload';
+...
 
 简单使用方式：
 ```
